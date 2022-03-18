@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+} 
+
+.header{
+    background: #2f438a;
+}
+
+main{
+    background-color: #eeeefe;
+}
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    padding: 0 25px;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.logo a img{
+    width: 70px;
+    height: 70px;
+}
+
+.login i, button{
+    display: inline-block;
+    margin-right: 20px;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.login button{
+    padding: 5px;
+    border: 1px solid #4c65bf;
+    background: 0 0;
+    cursor: pointer;
+    box-shadow: 0 14px 24px 7px rgb(0 0 0 / 40%);
+    width: 140px;
+    border-radius: 23px;
+}
+
+.login{
+    flex-grow: 1;
+    text-align: right;
+}
+
+label{
+    position: absolute;
+    top: 14px;
+    left: 8%;
+    font-size: 26px;
+    color: #fff;
+}
+/* Menu items  */
+
+.header-menu{
+    background-color: #fff;
+}
+
+.menu-icon {
+    width: 28px;
+    height: 22px;
+    margin-left: 20px;
+    display: none;
+}
+
+.menu-items{
+    width: 100%;
+    display: flex;
+    padding: 10px 25px;
+}
+
+.menu-items ul li {
+    display: inline-block;
+    margin-right: 35px;
+}
+
+.menu-items ul li a{
+    color: #212529;
+}
+
+.menu-items ul li a:hover{
+    border-bottom: 4px solid #2f438a ;
+}
+
+/* Start introduction */
+
+.introduction{
+    position: relative;
+}
+
+.introduction img{
+    width: 100%;
+}
+
+.left_icon i{
+    position: absolute;
+    font-size: 40px;
+    color: #d9d6d6a3;
+    bottom: 145px;
+    left: 104px;
+    cursor: pointer;
+}
+
+.right_icon i{
+    position: absolute;
+    font-size: 40px;
+    color: #d9d6d6a3;
+    bottom: 150px;
+    right: 132px;
+    cursor: pointer;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    bottom: px;
+    bottom: 94px;
+    left: 26%;
+    color: #fff;
+    transform: translateX(10px);
+    transition: transform 0.5s;
+}
+
+.text h1{
+    margin-bottom: 25px;
+}
+.next{
+    position: absolute;
+    bottom: 35px;
+    right: 48%;
+    color: #fff;
+}
+
+
+/* Start services */
+
+.services{
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+h1, .slider_text{
+   animation-duration: 3s;
+   animation-name: slidein;
+}
+input {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    width: 640px;
+    height: 50px;
+    border-radius: 11px;
+    left: 21%;
+    bottom: 0;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.services i{
+    position: absolute;
+    right: 20%;
+    bottom: 12px;
+    font-size: 30px;
+    color: #808080a3;
+    cursor: pointer;
+}
+
+.service-list h3{
+    text-align: center;
+    color: #555;
+    padding: 35px;
+}
+
+
+.service-list-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: center;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 12px;
+    background-color: #fff;
+    width: 220px;
+    color: #555;
+    height: 110px;
+    margin: 20px;
+}
+
+.item p{
+    align-items: center;
+}
+
+.item img{
+    padding: 7px;
+}
+
+.item:hover{
+    background-color: #2f438a;
+    cursor: pointer;
+    color: #fff;
+}
+
+.service-list{
+    width: 100%;
+    background-color: #eeeefe;
+}
+
+/* End services */
+
+/* Start app section */
+
+.app-items{
+    background-image: radial-gradient(circle at 90% 19%,#0d1f5c,#2f438a)
+}
+
+.info{
+    display: flex;
+}
+
+.info-app{
+    width: 50%;
+}
+
+.info-app p{
+    text-align: center;
+    padding: 25px;
+    color: #b8c8ff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.info-app img {
+    width: 77px;
+    height: 24px;
+    position: relative;
+    left: 13%;
+}
+
+.logo-phone{
+    width: 50%;
+    text-align: center;
+}
+
+.logo-phone img{
+    width: 153px;
+    height: 260px;
+}
+
+/* Start footer */
+
+.useful-links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.links-left{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.links-left img{
+    width: 201px;
+    height: 75px;
+}
+
+.links-left ul .call li::before{
+    background-image: url(../image/service/check.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+    content: "";
+}
+
+.links-left ul .call li{
+    padding: 5px;
+    font-size: 12px;
+    color: #555;
+}
+
+.links-left ul .help li{
+    color: #737070;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.links-right {
+    display: flex;
+    justify-content: space-between;
+    width: 56%;
+    padding: 35px;
+}
+
+.lists-link ul li {
+    font-size: 12px;
+    color: #555;
+    position: relative;
+    top: 26px;
+    padding: 5px;
+}
+
+.links-right ul .ask li::before{
+    background-image: url(../image/service/check.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 21px;
+    height: 12px;
+    content: "";
+}
+
+
+/* Links gov.az */
+
+.links{
+    background: #eeeeef;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+}
+
+.social ul li a::before{
+    background-image: url(../image/service/earth.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 23px;
+    height: 14px;
+    content: "";
+}
+
+.social ul li a{
+    font-weight: 800;
+    font-size: 14px;
+    color: #676767;
+}
+
+.links .sosial{
+    color: #2f438a
+}
+
+.social ul li{
+    display: inline-block;
+    margin-right: 145px;
+}
+
+#sl{
+    color: #676767;
+}
+/* footer end */
+
+.footer-end{
+    background: #2f438a;
+    height: 48px;
+}
+
+.footer-end span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    align-items: center;
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links ul li a i{
+    color: #eee;
+    font-size: 30px;
+}
+
+.social-links ul li{
+    margin-right: 18px;
+}
+
+.social-links ul{
+    display: flex;
+}
+
+.social-links ul li a .fa-facebook{
+    color: #2f438a;
+}
+
+.social-text h4{
+    padding-bottom: 15px;
+    color: #676767;
+}
+
+/* Animation */
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
